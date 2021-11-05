@@ -1,0 +1,6 @@
+org\teron\dao\UserDAO.class
+org\teron\models\User.class
+org\teron\config\SpringConfig.class
+org\teron\controllers\MainController.class
+org\teron\controllers\UserController.class
+org\teron\config\CSSpringMvcDispetcherServletInitializer.class

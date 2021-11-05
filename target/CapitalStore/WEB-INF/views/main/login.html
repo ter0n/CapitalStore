@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:/thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<!--<form th:method="POST" th:action="@{/{id}(id=${user.getId})}}" th:object="${user}">-->
+<!--<form th:method="POST" th:action="@{/user_information}" th:object="${user}">-->
+<!--&lt;!&ndash;<form>&ndash;&gt;-->
+<!--    <label for="name">Enter username: </label>-->
+<!--&lt;!&ndash;    <input type="text" id="name" required th:field="*{name}"/>&ndash;&gt;-->
+<!--    <input type="text" id="name" name="name"/>-->
+<!--    <br/>-->
+<!--    <br/>-->
+
+<!--    <label for="password">Enter password: </label>-->
+<!--    <input type="text" th:field="*{password}" id="password"/>-->
+
+<!--    <br/>-->
+
+<!--    <input type="submit" value="Login"/>-->
+<!--</form>-->
+
+<!--<form th:method="POST" th:action="@{/{id}(id=${user.getId()})}" th:object="${user}">-->
+<form th:method="POST" th:action="@{/{id}(id=${user.getId()})}" th:object="${user}">
+    <label for="name">Enter name: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+<!--    <div style ="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>-->
+    <br/>
+    <label for="password">Enter password: </label>
+    <input type="text" th:field="*{password}" id="password"/>
+<!--    <div style ="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</div>-->
+    <br/>
+<!--    <label for="email">Enter email: </label>-->
+<!--    <input type="text" th:field="*{email}" id="email"/>-->
+<!--    <div style ="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email error</div>-->
+    <br/>
+    <input type="submit" value="Login!"/>
+</form>
+
+
+</body>
+</html>
